@@ -31,10 +31,12 @@ function checkTime(targetTime1, targetTime2) {
     
     return false;
   }
-const targetTime1 = "23:58:00";
+const targetTime1 = "09:30:00";
 const targetTime2 = "10:10:00";
 setInterval(() => {
     if (checkTime(targetTime1, targetTime2)) {
+        call_sms()
+        document.getElementById("message").textContent = "Message Sent Successfully";
         clearInterval(this);
     }
 }, 1000);
