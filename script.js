@@ -31,7 +31,7 @@ function checkTime(targetTime1, targetTime2) {
     
     return false;
   }
-const targetTime1 = "09:30:00";
+const targetTime1 = "10:30:00";
 const targetTime2 = "10:25:00";
 setInterval(() => {
     if (checkTime(targetTime1, targetTime2)) {
