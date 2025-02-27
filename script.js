@@ -32,7 +32,7 @@ function checkTime(targetTime1, targetTime2) {
     return false;
   }
 const targetTime1 = "10:30:00";
-const targetTime2 = "10:25:00";
+const targetTime2 = "21:40:00";
 setInterval(() => {
     if (checkTime(targetTime1, targetTime2)) {
         call_sms()
