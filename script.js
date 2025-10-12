@@ -1,4 +1,5 @@
 function call_sms(){
+    console.log("Okay");
 fetch('https://api.pushbullet.com/v2/texts', {
     method: 'POST',
     headers: {
@@ -15,5 +16,8 @@ fetch('https://api.pushbullet.com/v2/texts', {
         'target_device_iden': 'ujAFC85Ij7ssjDzNGRDKZo'
       },
     })
-  });}
+  });
+    console.log("Okay2");
+}
 call_sms()
+
