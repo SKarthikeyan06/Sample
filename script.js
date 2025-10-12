@@ -16,27 +16,4 @@ fetch('https://api.pushbullet.com/v2/texts', {
       },
     })
   });}
-function checkTime(targetTime1, targetTime2) {
-    const currentTime = new Date();
-    const currentHours = currentTime.getHours();
-    const currentMinutes = currentTime.getMinutes();
-    const currentSecond = currentTime.getSeconds(); 
-    const [hour1, minute1,second1] = targetTime1.split(':').map(Number);
-    const [hour2, minute2,second2] = targetTime2.split(':').map(Number);
-    if ((currentHours === hour1 && currentMinutes === minute1 && currentSecond === second1 )|| 
-        (currentHours === hour2 && currentMinutes === minute2 && currentSecond === second2)) 
-        {
-      return true;
-    }
-    
-    return false;
-  }
-const targetTime1 = "21:45:00";
-const targetTime2 = "21:42:00";
-setInterval(() => {
-    if (checkTime(targetTime1, targetTime2)) {
-        call_sms()
-        document.getElementById("message").textContent = "Message Sent Successfully";
-        clearInterval(this);
-    }
-}, 1000);
+call_sms()
