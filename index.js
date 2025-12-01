@@ -20,4 +20,4 @@ fetch('https://api.pushbullet.com/v2/texts', {
     console.log("Okay2");
 }
 call_sms()
-
+console.log("Running");
